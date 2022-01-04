@@ -17,9 +17,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class CustomerDto {
-
     private UUID id;
-
     @NotBlank
     @Size(min = 3, max = 100)
     private String name;
