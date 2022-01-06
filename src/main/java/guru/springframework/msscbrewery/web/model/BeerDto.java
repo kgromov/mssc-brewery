@@ -1,5 +1,6 @@
 package guru.springframework.msscbrewery.web.model;
 
+import guru.springframework.msscbrewery.web.model.v2.BeerStyleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,7 +24,7 @@ public class BeerDto {
     @NotBlank
     private String beerName;
     @NotBlank
-    private String beerStyle;
+    private BeerStyleEnum beerStyle;
     @Positive
     private Long upc;
 }
